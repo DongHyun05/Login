@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title> 회원가입 </title>
+	<style>
+		#mylink{
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body align='center'>
+        <header>
+		<h1>회원가입</h1>
+	</header>
+
+	<form action="/register" method="POST">
+		<fieldset>
+			<label>사용자 이름</label>
+			<input type ="text" id = 'username' name="username" placeholder="Hawada" required>
+			<br><br>
+
+			<label>이메일 주소</label>
+			<input type ="email" id = 'email' name="email" placeholder="abc@example.com" required>
+			<br><br>
+
+			<label>비밀번호</label>
+			<input type="password" id = "password" name="password" required>
+			<br><br>
+
+			<button type ="reset">초기화</button>
+			<button type ="submit">등록</button>
+		</fieldset>
+	</form>
+	<br><br>
+        <a id="mylink" href="./login.html">로그인</a>
+    
+</body>
+</html>
